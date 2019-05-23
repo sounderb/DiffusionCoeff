@@ -18,7 +18,7 @@ t1 = time.perf_counter()
 cldata = {'Depth': [0.25, 0.75, 1.25,2,3], 'Cl': [11.19401,4.969,2.048,0.2,0.01]}
 cldata = pd.DataFrame.from_dict(cldata)
 
-cl = cldata['Cl']     #cldata['1 1132 C1']
+cl = cldata['Cl'] 
 mask = np.array(np.isfinite(cl)) #bool series to filter NaN values
 age = 4
 dcinit = 0.01 #initial estimate for the optimization
